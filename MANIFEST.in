@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include syma *.css
+recursive-include syma *.csv
+recursive-include syma *.html
+recursive-include syma *.ico
+recursive-include syma *.js
+recursive-include syma *.json
+recursive-include syma *.md
+recursive-include syma *.png
+recursive-include syma *.py
+recursive-include syma *.svg
+recursive-include syma *.txt
+recursive-exclude syma *.pyc
