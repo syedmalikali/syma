@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series",
+ "creation": "2022-04-13 10:58:08.565031",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cofbrncd",
+  "co3quotdt",
+  "salesman",
+  "column_break_2",
+  "customer",
+  "co3cusname",
+  "column_break_6",
+  "address",
+  "section_break_9",
+  "item",
+  "section_break_11",
+  "co3totval",
+  "co3disamt",
+  "co3netval",
+  "column_break_15",
+  "co3quotsts",
+  "co3totqty",
+  "co3vatval",
+  "co3netvalvat",
+  "co3disper",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "cofbrncd",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "co3quotdt",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer Code",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.custname",
+   "fieldname": "co3cusname",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "customer.address",
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "salesman",
+   "fieldtype": "Link",
+   "label": "Salesman",
+   "options": "Salesman"
+  },
+  {
+   "fieldname": "co3totval",
+   "fieldtype": "Data",
+   "label": "Total Value"
+  },
+  {
+   "fieldname": "co3disamt",
+   "fieldtype": "Data",
+   "label": "Disc Amount"
+  },
+  {
+   "fieldname": "co3netval",
+   "fieldtype": "Data",
+   "label": "Net Value"
+  },
+  {
+   "fieldname": "co3quotsts",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "co3totqty",
+   "fieldtype": "Data",
+   "label": "Total Qty"
+  },
+  {
+   "fieldname": "co3vatval",
+   "fieldtype": "Data",
+   "label": "Vat Value"
+  },
+  {
+   "fieldname": "co3netvalvat",
+   "fieldtype": "Data",
+   "label": "Net Value With VAT"
+  },
+  {
+   "fieldname": "co3disper",
+   "fieldtype": "Data",
+   "label": "Disc Perc"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quotation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Quotation Item"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-04-14 12:01:40.307687",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "Quotation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

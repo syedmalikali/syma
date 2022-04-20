@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-14 10:43:17.567007",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "co4lineno",
+  "co4linetyp",
+  "co4itmcd",
+  "co4itmname",
+  "co4txtlin1",
+  "co4uom",
+  "co4qty",
+  "co4unitpr",
+  "co4totpr",
+  "co4curavgc",
+  "co4curqty",
+  "co4vatamount"
+ ],
+ "fields": [
+  {
+   "fieldname": "co4lineno",
+   "fieldtype": "Int",
+   "label": "Line Number"
+  },
+  {
+   "fieldname": "co4linetyp",
+   "fieldtype": "Data",
+   "label": "Line Type"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "co4itmcd",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Material",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "Material.in3itmname",
+   "fieldname": "co4itmname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "co4txtlin1",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "co4uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "co4qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "co4unitpr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "co4totpr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "co4curavgc",
+   "fieldtype": "Data",
+   "label": "Cur. Avg Cost"
+  },
+  {
+   "fieldname": "co4curqty",
+   "fieldtype": "Data",
+   "label": "Cur.Qty"
+  },
+  {
+   "fieldname": "co4vatamount",
+   "fieldtype": "Data",
+   "label": "Vat Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-20 13:54:18.696605",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "Quotation Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

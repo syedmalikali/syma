@@ -1,0 +1,216 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:in3itmcd",
+ "creation": "2022-04-20 13:01:36.803378",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "in3itmcd",
+  "in3itmname",
+  "in3itmnameara",
+  "column_break_5",
+  "in3clscd",
+  "in3uom",
+  "in3stkitm",
+  "section_break_8",
+  "in3minqty",
+  "in3maxqty",
+  "in3reoqty",
+  "in3unitwgt",
+  "column_break_14",
+  "in3lstpdt",
+  "in3lstpcst",
+  "in3lstpsup",
+  "section_break_18",
+  "in3curqty",
+  "in3curavgc",
+  "in3salepr1",
+  "in3itmact",
+  "modelno",
+  "partno",
+  "in3lsupname",
+  "in3lyrqty",
+  "in3lyravg",
+  "in3ordtype",
+  "in3itmsize"
+ ],
+ "fields": [
+  {
+   "fieldname": "in3itmcd",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "in3itmname",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "in3clscd",
+   "fieldtype": "Link",
+   "label": "Class",
+   "options": "Class Master"
+  },
+  {
+   "default": "0",
+   "fieldname": "in3stkitm",
+   "fieldtype": "Check",
+   "label": "Is Stock Item"
+  },
+  {
+   "fieldname": "in3uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "in3minqty",
+   "fieldtype": "Data",
+   "label": "Min Qty"
+  },
+  {
+   "fieldname": "in3maxqty",
+   "fieldtype": "Data",
+   "label": "Max Qty"
+  },
+  {
+   "fieldname": "in3reoqty",
+   "fieldtype": "Data",
+   "label": "Re Order Qty"
+  },
+  {
+   "fieldname": "in3unitwgt",
+   "fieldtype": "Data",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "in3lstpdt",
+   "fieldtype": "Data",
+   "label": "Last Purchase Date"
+  },
+  {
+   "fieldname": "in3lstpcst",
+   "fieldtype": "Data",
+   "label": "Last Purchase Cost"
+  },
+  {
+   "fieldname": "in3lstpsup",
+   "fieldtype": "Data",
+   "label": "Last Purchase Supplier"
+  },
+  {
+   "fieldname": "in3curqty",
+   "fieldtype": "Data",
+   "label": "Cur Stock Qty"
+  },
+  {
+   "fieldname": "in3curavgc",
+   "fieldtype": "Data",
+   "label": "Cur Avg. Cost"
+  },
+  {
+   "fieldname": "in3salepr1",
+   "fieldtype": "Data",
+   "label": "Selling Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "in3itmact",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "modelno",
+   "fieldtype": "Data",
+   "label": "Model Number"
+  },
+  {
+   "fieldname": "partno",
+   "fieldtype": "Data",
+   "label": "Part Number"
+  },
+  {
+   "fieldname": "in3lsupname",
+   "fieldtype": "Data",
+   "label": "Last Supplier Name"
+  },
+  {
+   "fieldname": "in3lyrqty",
+   "fieldtype": "Data",
+   "label": "Last Year Qty"
+  },
+  {
+   "fieldname": "in3lyravg",
+   "fieldtype": "Data",
+   "label": "Last Avg Cost"
+  },
+  {
+   "fieldname": "in3ordtype",
+   "fieldtype": "Data",
+   "label": "Order Type"
+  },
+  {
+   "fieldname": "in3itmsize",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "in3itmnameara",
+   "fieldtype": "Data",
+   "label": "Item Name Arabic"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Item Master Details"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Re order & Last Purchase Details"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-20 13:07:07.869741",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "Material",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

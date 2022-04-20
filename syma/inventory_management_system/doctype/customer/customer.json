@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:customer",
+ "creation": "2022-04-13 10:33:55.294497",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "custname",
+  "arbcusname",
+  "address",
+  "procman",
+  "finman",
+  "telno",
+  "faxno",
+  "co1slmcd",
+  "co2crdlimt",
+  "co2vatnumber",
+  "co2cusvat",
+  "fincode"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "custname",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "arbcusname",
+   "fieldtype": "Data",
+   "label": "Name in Arabic"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "procman",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "finman",
+   "fieldtype": "Data",
+   "label": "Finance"
+  },
+  {
+   "fieldname": "telno",
+   "fieldtype": "Data",
+   "label": "Telephone No"
+  },
+  {
+   "fieldname": "faxno",
+   "fieldtype": "Data",
+   "label": "Fax No"
+  },
+  {
+   "fieldname": "co1slmcd",
+   "fieldtype": "Link",
+   "label": "Salesman",
+   "options": "Salesman"
+  },
+  {
+   "fieldname": "co2crdlimt",
+   "fieldtype": "Float",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "co2vatnumber",
+   "fieldtype": "Data",
+   "label": "VAT Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "co2cusvat",
+   "fieldtype": "Check",
+   "label": "VAT Active"
+  },
+  {
+   "fieldname": "fincode",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-17 10:10:01.852796",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

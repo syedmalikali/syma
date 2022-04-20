@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:in5supcd",
+ "creation": "2022-04-20 12:52:39.298093",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "in5supcd",
+  "in5supname",
+  "in5supadr1",
+  "in5suptel",
+  "in5supfax",
+  "in5contper",
+  "in5supact",
+  "in5vatnumber"
+ ],
+ "fields": [
+  {
+   "fieldname": "in5supcd",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "in5supname",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "in5supadr1",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "in5suptel",
+   "fieldtype": "Data",
+   "label": "Telephone No"
+  },
+  {
+   "fieldname": "in5supfax",
+   "fieldtype": "Data",
+   "label": "Fax No"
+  },
+  {
+   "fieldname": "in5contper",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "default": "0",
+   "fieldname": "in5supact",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "in5vatnumber",
+   "fieldtype": "Data",
+   "label": "Vat Number",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-20 12:52:39.298093",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "Supplier",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
