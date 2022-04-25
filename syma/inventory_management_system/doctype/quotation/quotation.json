@@ -66,6 +66,8 @@
    "label": "Address"
   },
   {
+   "fetch_from": "customer.co1slmcd",
+   "fetch_if_empty": 1,
    "fieldname": "salesman",
    "fieldtype": "Link",
    "label": "Salesman",
@@ -73,17 +75,18 @@
   },
   {
    "fieldname": "co3totval",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Total Value"
   },
   {
+   "default": "0.00",
    "fieldname": "co3disamt",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Disc Amount"
   },
   {
    "fieldname": "co3netval",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Net Value"
   },
   {
@@ -93,22 +96,22 @@
   },
   {
    "fieldname": "co3totqty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Total Qty"
   },
   {
    "fieldname": "co3vatval",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Vat Value"
   },
   {
    "fieldname": "co3netvalvat",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Net Value With VAT"
   },
   {
    "fieldname": "co3disper",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Disc Perc"
   },
   {
@@ -150,7 +153,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-04-24 11:23:53.690705",
+ "modified": "2022-04-25 14:23:14.295108",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Quotation",
