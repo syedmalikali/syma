@@ -192,7 +192,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-20 13:07:07.869741",
+ "modified": "2022-04-24 11:24:28.412621",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Material",
@@ -212,5 +212,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "in3itmname"
 }

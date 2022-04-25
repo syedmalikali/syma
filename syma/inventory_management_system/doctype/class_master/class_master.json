@@ -32,7 +32,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-20 12:48:54.732195",
+ "modified": "2022-04-24 11:24:09.908112",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Class Master",
@@ -52,5 +52,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "in2clsname"
 }

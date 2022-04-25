@@ -9,7 +9,7 @@
   "co4lineno",
   "co4linetyp",
   "co4itmcd",
-  "co4itmname",
+  "in3itmname",
   "co4txtlin1",
   "co4uom",
   "co4qty",
@@ -40,60 +40,67 @@
    "reqd": 1
   },
   {
-   "fetch_from": "Material.in3itmname",
-   "fieldname": "co4itmname",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Item Name"
-  },
-  {
    "fieldname": "co4txtlin1",
    "fieldtype": "Data",
    "label": "Description"
   },
   {
+   "fetch_from": "co4itmcd.in3uom",
    "fieldname": "co4uom",
    "fieldtype": "Data",
-   "label": "UOM"
+   "label": "UOM",
+   "read_only": 1
   },
   {
    "fieldname": "co4qty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Qty"
   },
   {
    "fieldname": "co4unitpr",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Unit Price"
   },
   {
    "fieldname": "co4totpr",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Total Price"
+   "label": "Total Price",
+   "read_only": 1
   },
   {
+   "fetch_from": "co4itmcd.in3curavgc",
    "fieldname": "co4curavgc",
    "fieldtype": "Data",
-   "label": "Cur. Avg Cost"
+   "label": "Cur. Avg Cost",
+   "read_only": 1
   },
   {
+   "fetch_from": "co4itmcd.in3curqty",
    "fieldname": "co4curqty",
    "fieldtype": "Data",
-   "label": "Cur.Qty"
+   "label": "Cur.Qty",
+   "read_only": 1
   },
   {
    "fieldname": "co4vatamount",
    "fieldtype": "Data",
    "label": "Vat Amount"
+  },
+  {
+   "fetch_from": "co4itmcd.in3itmname",
+   "fieldname": "in3itmname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-04-20 13:54:18.696605",
+ "modified": "2022-04-25 10:44:21.644555",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Quotation Item",

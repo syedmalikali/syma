@@ -99,7 +99,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-17 10:10:01.852796",
+ "modified": "2022-04-24 11:25:33.931359",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Customer",
@@ -119,5 +119,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "custname"
 }

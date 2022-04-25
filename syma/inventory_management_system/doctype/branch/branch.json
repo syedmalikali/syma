@@ -44,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-13 11:00:42.012555",
+ "modified": "2022-04-24 11:25:12.185197",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Branch",
@@ -64,5 +64,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "cofbrnname"
 }
