@@ -11,6 +11,7 @@
   "custname",
   "arbcusname",
   "address",
+  "email",
   "procman",
   "finman",
   "telno",
@@ -52,7 +53,8 @@
   },
   {
    "fieldname": "procman",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Contact Person"
   },
   {
    "fieldname": "finman",
@@ -95,11 +97,16 @@
    "fieldname": "fincode",
    "fieldtype": "Data",
    "label": "Account Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-24 11:25:33.931359",
+ "modified": "2022-04-26 11:14:11.903934",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Customer",

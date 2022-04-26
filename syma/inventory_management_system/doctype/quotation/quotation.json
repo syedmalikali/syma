@@ -10,23 +10,24 @@
   "cofbrncd",
   "co3quotdt",
   "salesman",
+  "salesman_name",
   "column_break_2",
   "customer",
   "co3cusname",
-  "column_break_6",
   "address",
+  "co3cuscont",
   "section_break_9",
   "item",
   "section_break_11",
-  "co3totval",
-  "co3disamt",
-  "co3netval",
-  "column_break_15",
   "co3quotsts",
   "co3totqty",
+  "column_break_15",
+  "co3totval",
+  "co3disamt",
+  "co3disper",
+  "co3netval",
   "co3vatval",
   "co3netvalvat",
-  "co3disper",
   "amended_from"
  ],
  "fields": [
@@ -43,6 +44,7 @@
    "search_index": 1
   },
   {
+   "default": "Today",
    "fieldname": "co3quotdt",
    "fieldtype": "Date",
    "label": "Date"
@@ -62,7 +64,7 @@
   {
    "fetch_from": "customer.address",
    "fieldname": "address",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Address"
   },
   {
@@ -74,9 +76,11 @@
    "options": "Salesman"
   },
   {
+   "default": "0.00",
    "fieldname": "co3totval",
    "fieldtype": "Float",
-   "label": "Total Value"
+   "label": "Total Value",
+   "read_only": 1
   },
   {
    "default": "0.00",
@@ -85,9 +89,11 @@
    "label": "Disc Amount"
   },
   {
+   "default": "0.00",
    "fieldname": "co3netval",
    "fieldtype": "Float",
-   "label": "Net Value"
+   "label": "Net Value",
+   "read_only": 1
   },
   {
    "fieldname": "co3quotsts",
@@ -95,21 +101,27 @@
    "label": "Status"
   },
   {
+   "default": "0.00",
    "fieldname": "co3totqty",
    "fieldtype": "Float",
    "label": "Total Qty"
   },
   {
+   "default": "0.00",
    "fieldname": "co3vatval",
    "fieldtype": "Float",
-   "label": "Vat Value"
+   "label": "Vat Value",
+   "read_only": 1
   },
   {
+   "default": "0.00",
    "fieldname": "co3netvalvat",
    "fieldtype": "Float",
-   "label": "Net Value With VAT"
+   "label": "Net Value With VAT",
+   "read_only": 1
   },
   {
+   "default": "0.00",
    "fieldname": "co3disper",
    "fieldtype": "Float",
    "label": "Disc Perc"
@@ -134,10 +146,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "section_break_9",
    "fieldtype": "Section Break"
   },
@@ -148,12 +156,24 @@
   {
    "fieldname": "column_break_15",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "salesman.co1slmname",
+   "fieldname": "salesman_name",
+   "fieldtype": "Data",
+   "label": "Salesman Name"
+  },
+  {
+   "fetch_from": "customer.procman",
+   "fieldname": "co3cuscont",
+   "fieldtype": "Data",
+   "label": "Attn To"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-04-25 14:23:14.295108",
+ "modified": "2022-04-26 11:10:17.303496",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Quotation",
