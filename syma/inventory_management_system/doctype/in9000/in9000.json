@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-12 12:35:52.748235",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "in9itmcd",
+  "in9itmname",
+  "in9clscd",
+  "in9uom",
+  "in9orgwh",
+  "in9destwh",
+  "in9qty",
+  "in9unitcos",
+  "in9disrate",
+  "in9totcost",
+  "in9enterunitcos",
+  "in9invno",
+  "in9suptotal",
+  "in9avcbef",
+  "in9avcaft",
+  "in9invlineno",
+  "in9brncd",
+  "in9listqty"
+ ],
+ "fields": [
+  {
+   "fieldname": "in9itmcd",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Material"
+  },
+  {
+   "fetch_from": "IN9ITMCD.in3itmname",
+   "fieldname": "in9itmname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fetch_from": "in9itmcd.in3clscd",
+   "fieldname": "in9clscd",
+   "fieldtype": "Data",
+   "label": "Class Code"
+  },
+  {
+   "fetch_from": "in9itmcd.in3uom",
+   "fieldname": "in9uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "in9orgwh",
+   "fieldtype": "Link",
+   "label": "Orgin Warehouse",
+   "options": "Warehouse Master"
+  },
+  {
+   "fieldname": "in9destwh",
+   "fieldtype": "Link",
+   "label": "Dest Warehouse",
+   "options": "Warehouse Master"
+  },
+  {
+   "fieldname": "in9qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "in9unitcos",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit Cost"
+  },
+  {
+   "fieldname": "in9disrate",
+   "fieldtype": "Float",
+   "label": "Disc Rate"
+  },
+  {
+   "fieldname": "in9totcost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "in9enterunitcos",
+   "fieldtype": "Float",
+   "label": "Entered Cost"
+  },
+  {
+   "fieldname": "in9invno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "in9suptotal",
+   "fieldtype": "Float",
+   "label": "Total "
+  },
+  {
+   "fieldname": "in9avcbef",
+   "fieldtype": "Float",
+   "label": "Avg Cost Before"
+  },
+  {
+   "fieldname": "in9avcaft",
+   "fieldtype": "Float",
+   "label": "Avg Cost After"
+  },
+  {
+   "fieldname": "in9invlineno",
+   "fieldtype": "Int",
+   "label": "Line Number Invoice"
+  },
+  {
+   "fieldname": "in9brncd",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "in9listqty",
+   "fieldtype": "Float",
+   "label": "List Qty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-12 13:17:08.870164",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "IN9000",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

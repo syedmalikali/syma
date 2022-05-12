@@ -35,7 +35,8 @@
   "in3lyrqty",
   "in3lyravg",
   "in3ordtype",
-  "in3itmsize"
+  "in3itmsize",
+  "qty_in_warehouse"
  ],
  "fields": [
   {
@@ -188,11 +189,17 @@
   {
    "fieldname": "section_break_18",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty_in_warehouse",
+   "fieldtype": "Table",
+   "label": "Qty In Warehouse",
+   "options": "Material Warehouse"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-24 11:24:28.412621",
+ "modified": "2022-05-11 10:42:34.783411",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Material",

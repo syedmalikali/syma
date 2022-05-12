@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-12 12:26:17.087390",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "in8trnstyp",
+  "in8trnsdt",
+  "in8docref",
+  "in8orgwh",
+  "in8destwh",
+  "in8supcd",
+  "in8totqty",
+  "in8totval",
+  "in8vatamount",
+  "in8totvalvat",
+  "in8totline",
+  "in8trnsdel",
+  "in8trnssts",
+  "convvalue",
+  "in8disrate",
+  "in8lsupname",
+  "in8brncd",
+  "in8sequno",
+  "in8postdate",
+  "in8vatnumber",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "in8trnstyp",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "in8trnsdt",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "in8docref",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "in8orgwh",
+   "fieldtype": "Link",
+   "label": "Orgin Warehouse",
+   "options": "Warehouse Master"
+  },
+  {
+   "fieldname": "in8destwh",
+   "fieldtype": "Link",
+   "label": "Dest. Warehouse",
+   "options": "Warehouse Master"
+  },
+  {
+   "fieldname": "in8supcd",
+   "fieldtype": "Link",
+   "label": "Supplier Code",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "in8totqty",
+   "fieldtype": "Float",
+   "label": "Total Qty"
+  },
+  {
+   "fieldname": "in8totval",
+   "fieldtype": "Float",
+   "label": "Total Value"
+  },
+  {
+   "fieldname": "in8vatamount",
+   "fieldtype": "Float",
+   "label": "Vat Amount"
+  },
+  {
+   "fieldname": "in8totvalvat",
+   "fieldtype": "Float",
+   "label": "Total With Vat"
+  },
+  {
+   "fieldname": "in8totline",
+   "fieldtype": "Float",
+   "label": "Total Line"
+  },
+  {
+   "default": "0",
+   "fieldname": "in8trnsdel",
+   "fieldtype": "Check",
+   "label": "Is Deleted"
+  },
+  {
+   "fieldname": "in8trnssts",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "convvalue",
+   "fieldtype": "Float",
+   "label": "Conversion Value"
+  },
+  {
+   "fieldname": "in8disrate",
+   "fieldtype": "Float",
+   "label": "Disc Rate"
+  },
+  {
+   "fetch_from": "IN8SUPCD.in5supname",
+   "fieldname": "in8lsupname",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "in8brncd",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "in8sequno",
+   "fieldtype": "Int",
+   "label": "Seq Number"
+  },
+  {
+   "fieldname": "in8postdate",
+   "fieldtype": "Date",
+   "label": "Post Date"
+  },
+  {
+   "fetch_from": "IN8SUPCD.in5vatnumber",
+   "fieldname": "in8vatnumber",
+   "fieldtype": "Data",
+   "label": "Supplier Vat Number"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "IN7000",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-12 12:26:17.087390",
+ "modified_by": "Administrator",
+ "module": "Inventory Management System",
+ "name": "IN7000",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

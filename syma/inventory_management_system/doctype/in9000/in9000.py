@@ -1,0 +1,8 @@
+# Copyright (c) 2022, Syed Malik and contributors
+# For license information, please see license.txt
+
+# import frappe
+from frappe.model.document import Document
+
+class IN9000(Document):
+	pass
