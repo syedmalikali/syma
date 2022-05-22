@@ -72,10 +72,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-20 12:52:39.298093",
+ "modified": "2022-05-19 11:20:20.705282",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Supplier",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -92,5 +93,7 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "in5supname"
 }

@@ -34,7 +34,8 @@
    "options": "Material"
   },
   {
-   "fetch_from": "IN9ITMCD.in3itmname",
+   "fetch_from": "in9itmcd.in3itmname",
+   "fetch_if_empty": 1,
    "fieldname": "in9itmname",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -65,6 +66,7 @@
    "options": "Warehouse Master"
   },
   {
+   "default": "0",
    "fieldname": "in9qty",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -133,12 +135,13 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-05-12 13:17:08.870164",
+ "modified": "2022-05-19 10:53:04.791952",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "IN9000",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }

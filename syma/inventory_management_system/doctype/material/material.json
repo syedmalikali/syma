@@ -16,6 +16,8 @@
   "in3uom",
   "in3stkitm",
   "section_break_8",
+  "qty_in_warehouse",
+  "section_break_11",
   "in3minqty",
   "in3maxqty",
   "in3reoqty",
@@ -35,8 +37,7 @@
   "in3lyrqty",
   "in3lyravg",
   "in3ordtype",
-  "in3itmsize",
-  "qty_in_warehouse"
+  "in3itmsize"
  ],
  "fields": [
   {
@@ -195,14 +196,20 @@
    "fieldtype": "Table",
    "label": "Qty In Warehouse",
    "options": "Material Warehouse"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-05-11 10:42:34.783411",
+ "modified": "2022-05-22 14:36:20.267550",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Material",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -220,5 +227,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "in3itmname"
 }

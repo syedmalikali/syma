@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "format:R{YY}{#######}",
  "creation": "2022-05-12 12:26:17.087390",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -8,29 +8,31 @@
  "field_order": [
   "in8trnstyp",
   "in8trnsdt",
-  "in8supcd",
   "in8docref",
-  "column_break_3",
-  "in8orgwh",
-  "in8lsupname",
   "convvalue",
-  "column_break_5",
+  "column_break_3",
   "in8destwh",
+  "in8brncd",
+  "in8orgwh",
+  "column_break_5",
+  "in8supcd",
+  "in8lsupname",
+  "in8vatnumber",
   "section_break_6",
-  "items",
+  "item",
   "section_break_11",
+  "column_break_14",
+  "in8totline",
   "in8totqty",
+  "column_break_17",
   "in8totval",
+  "in8disrate",
   "in8vatamount",
   "in8totvalvat",
-  "in8totline",
   "in8trnsdel",
   "in8trnssts",
-  "in8disrate",
-  "in8brncd",
   "in8sequno",
   "in8postdate",
-  "in8vatnumber",
   "amended_from"
  ],
  "fields": [
@@ -46,6 +48,7 @@
    "label": "Date"
   },
   {
+   "default": "Today",
    "fieldname": "in8docref",
    "fieldtype": "Data",
    "label": "Reference"
@@ -53,6 +56,7 @@
   {
    "fieldname": "in8orgwh",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Orgin Warehouse",
    "options": "Warehouse Master"
   },
@@ -91,7 +95,6 @@
   {
    "fieldname": "in8totline",
    "fieldtype": "Float",
-   "hidden": 1,
    "label": "Total Line"
   },
   {
@@ -107,6 +110,7 @@
    "label": "Status"
   },
   {
+   "default": "1.00",
    "fieldname": "convvalue",
    "fieldtype": "Float",
    "label": "Conversion Value"
@@ -132,11 +136,13 @@
   {
    "fieldname": "in8sequno",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Seq Number"
   },
   {
    "fieldname": "in8postdate",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "Post Date"
   },
   {
@@ -155,12 +161,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "items",
-   "fieldtype": "Table",
-   "label": "Items",
-   "options": "IN9000"
-  },
-  {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
   },
@@ -175,15 +175,31 @@
   {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "IN9000"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-12 13:14:57.536237",
+ "modified": "2022-05-22 10:55:24.725214",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "IN8000",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -200,5 +216,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }
