@@ -37,9 +37,18 @@ class IN8000(Document):
 				row.in6curqty = row.in6curqty + d.in9qty
 				doc.save()
 			t_qty = sum(flt(d.in6curqty) for d in doc.qty_in_warehouse)
-			doc.in3curqty = t_qty
+
+			if doc.in3curqty <= 0:
+				qty4avg = 0
+			else:
+				qty4avg = doc.in3curqty
+			old_total_value = flt(doc.in3curavgc)*flt(doc.in3curqty)
+			# frappe.msgprint(_("oldtotal {0} newtotal {1} total qty {2}").format(old_total_value,d.in9totcost,(t_qty)))
+			avgcost = (old_total_value+d.in9totcost)/(t_qty)
+			doc.in3curavgc= flt(avgcost)
+			doc.in3curqty = flt(t_qty)
 			doc.in3lstpdt = self.in8trnsdt
-			doc.in3lstpcst = d.in9unitcos
+			doc.in3lstpcst = flt(d.in9unitcos)
 			doc.in3lstpsup = self.in8supcd
 			doc.in3lsupname = self.in8supname
 			doc.save()

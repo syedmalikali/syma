@@ -76,22 +76,22 @@
   },
   {
    "fieldname": "in3minqty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Min Qty"
   },
   {
    "fieldname": "in3maxqty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Max Qty"
   },
   {
    "fieldname": "in3reoqty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Re Order Qty"
   },
   {
    "fieldname": "in3unitwgt",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Weight"
   },
   {
@@ -110,18 +110,19 @@
    "label": "Last Purchase Supplier"
   },
   {
+   "default": "0",
    "fieldname": "in3curqty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Cur Stock Qty"
   },
   {
    "fieldname": "in3curavgc",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Cur Avg. Cost"
   },
   {
    "fieldname": "in3salepr1",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Selling Price"
   },
   {
@@ -147,12 +148,12 @@
   },
   {
    "fieldname": "in3lyrqty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Last Year Qty"
   },
   {
    "fieldname": "in3lyravg",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Last Avg Cost"
   },
   {
@@ -211,7 +212,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-05-24 11:51:42.137023",
+ "modified": "2022-05-24 14:43:58.678112",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Material",
