@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:in3itmcd",
- "creation": "2022-04-20 13:01:36.803378",
+ "creation": "2022-05-24 08:51:06.380876",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -17,6 +17,9 @@
   "in3stkitm",
   "section_break_8",
   "qty_in_warehouse",
+  "column_break_11",
+  "in3curqty",
+  "in3curavgc",
   "section_break_11",
   "in3minqty",
   "in3maxqty",
@@ -26,14 +29,12 @@
   "in3lstpdt",
   "in3lstpcst",
   "in3lstpsup",
+  "in3lsupname",
   "section_break_18",
-  "in3curqty",
-  "in3curavgc",
   "in3salepr1",
   "in3itmact",
   "modelno",
   "partno",
-  "in3lsupname",
   "in3lyrqty",
   "in3lyravg",
   "in3ordtype",
@@ -95,12 +96,12 @@
   },
   {
    "fieldname": "in3lstpdt",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Last Purchase Date"
   },
   {
    "fieldname": "in3lstpcst",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Last Purchase Cost"
   },
   {
@@ -177,7 +178,7 @@
   {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break",
-   "label": "Re order & Last Purchase Details"
+   "label": "Stock Availablity"
   },
   {
    "fieldname": "column_break_5",
@@ -198,13 +199,19 @@
    "options": "Material Warehouse"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_11",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Last Purchase & Reorder Details"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-05-22 14:36:20.267550",
+ "modified": "2022-05-24 11:51:42.137023",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "Material",

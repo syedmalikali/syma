@@ -16,7 +16,7 @@
   "in8orgwh",
   "column_break_5",
   "in8supcd",
-  "in8lsupname",
+  "in8supname",
   "in8vatnumber",
   "section_break_6",
   "item",
@@ -121,13 +121,6 @@
    "label": "Disc Rate"
   },
   {
-   "fetch_from": "in8supcd.in5supname",
-   "fetch_if_empty": 1,
-   "fieldname": "in8lsupname",
-   "fieldtype": "Data",
-   "label": "Supplier Name"
-  },
-  {
    "fieldname": "in8brncd",
    "fieldtype": "Link",
    "label": "Branch",
@@ -189,12 +182,19 @@
   {
    "fieldname": "column_break_17",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "in8supcd.in5supname",
+   "fetch_if_empty": 1,
+   "fieldname": "in8supname",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-22 10:55:24.725214",
+ "modified": "2022-05-22 15:36:29.870040",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "IN8000",
