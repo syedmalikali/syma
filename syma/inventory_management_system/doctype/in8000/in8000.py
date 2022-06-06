@@ -22,7 +22,9 @@ class IN8000(Document):
 		for d in self.get("item"):
 			# if d.in9destwh == None:
 			d.in9destwh = self.in8destwh
+
 			doc = frappe.get_doc('Material', d.in9itmcd)
+			d.in9avcbef = doc.in3curavgc
 			# d.in9avcbef = doc.in3curavgc
 			row_count = 0
 			for row in doc.get("qty_in_warehouse"):
@@ -53,6 +55,7 @@ class IN8000(Document):
 			doc.in3lstpcst = flt(d.in9unitcos)
 			doc.in3lstpsup = self.in8supcd
 			doc.in3lsupname = self.in8supname
+			d.in9avcaft = flt(avgcost)
 			doc.save()
 
 			# if row_count > 0:
