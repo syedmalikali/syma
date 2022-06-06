@@ -21,7 +21,7 @@ class IN8000(Document):
 		total_qty = sum(flt(d.in9qty) for d in self.get("item"))
 		for d in self.get("item"):
 			# if d.in9destwh == None:
-			# 	d.in9destwh = self.in8destwh
+			d.in9destwh = self.in8destwh
 			doc = frappe.get_doc('Material', d.in9itmcd)
 			# d.in9avcbef = doc.in3curavgc
 			row_count = 0
@@ -32,6 +32,8 @@ class IN8000(Document):
 				row = doc.append("qty_in_warehouse", {})
 				row.warehouse_code= d.in9destwh
 				row.in6curqty = d.in9qty
+				# frappe.msgprint("no warehouse")
+				frappe.msgprint(d.in9destwh)
 				doc.save()
 			else:
 				row.in6curqty = row.in6curqty + d.in9qty
