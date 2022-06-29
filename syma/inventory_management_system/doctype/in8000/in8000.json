@@ -23,10 +23,13 @@
   "section_break_11",
   "column_break_14",
   "in8totline",
-  "in8totqty",
   "column_break_17",
+  "in8totqty",
+  "total_value_details_section",
   "in8totval",
   "in8disrate",
+  "in8netvalue",
+  "column_break_24",
   "in8vatamount",
   "in8totvalvat",
   "in8trnsdel",
@@ -118,7 +121,7 @@
   {
    "fieldname": "in8disrate",
    "fieldtype": "Float",
-   "label": "Disc Rate"
+   "label": "Discount"
   },
   {
    "fieldname": "in8brncd",
@@ -166,8 +169,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_11",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Total Details"
   },
   {
    "fieldname": "item",
@@ -189,12 +194,27 @@
    "fieldname": "in8supname",
    "fieldtype": "Data",
    "label": "Supplier Name"
+  },
+  {
+   "fieldname": "total_value_details_section",
+   "fieldtype": "Section Break",
+   "label": "Total Value Details"
+  },
+  {
+   "fieldname": "in8netvalue",
+   "fieldtype": "Float",
+   "label": "Net Value Before Vat",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-22 15:36:29.870040",
+ "modified": "2022-06-29 10:04:30.112927",
  "modified_by": "Administrator",
  "module": "Inventory Management System",
  "name": "IN8000",
@@ -211,6 +231,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
    "share": 1,
    "write": 1
   }

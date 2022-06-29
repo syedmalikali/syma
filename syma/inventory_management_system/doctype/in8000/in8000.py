@@ -35,7 +35,7 @@ class IN8000(Document):
 				row.warehouse_code= d.in9destwh
 				row.in6curqty = d.in9qty
 				# frappe.msgprint("no warehouse")
-				frappe.msgprint(d.in9destwh)
+				# frappe.msgprint(d.in9destwh)
 				doc.save()
 			else:
 				row.in6curqty = row.in6curqty + d.in9qty
